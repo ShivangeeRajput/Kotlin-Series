@@ -9,11 +9,10 @@ fun main() {
     //apply fun
     emp.apply {
         name="Sean"
-        desination="CEO"
+        designation="CEO"
     }
-    println(emp.name)
-    println(emp.desination)
+    println(emp)
 }
-data class Employee(var name:String="",var desination:String="Developer"){
+data class Employee(var name:String="",var designation:String="Developer"){
 
 }
