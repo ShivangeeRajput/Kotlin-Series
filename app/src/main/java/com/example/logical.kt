@@ -1,4 +1,4 @@
-package com
+package com.example
 
 fun main(){
      val above70=false

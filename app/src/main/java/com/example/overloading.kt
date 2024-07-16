@@ -1,4 +1,4 @@
-package com
+package com.example
 
 fun main(){
     println(a(10.0,20.0))

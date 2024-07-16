@@ -10,7 +10,9 @@ fun main() {
 
 }
 class myClass{
+
    companion object myObject{
+       @JvmStatic
         fun f(){
           println("Hello world")
         }

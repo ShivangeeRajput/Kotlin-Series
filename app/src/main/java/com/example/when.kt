@@ -1,4 +1,4 @@
-package com
+package com.example
 
 fun main(){
     var animal="dog"

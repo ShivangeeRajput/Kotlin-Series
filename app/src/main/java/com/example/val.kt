@@ -1,4 +1,4 @@
-package com
+package com.example
 
 fun main(){
     var i=10
