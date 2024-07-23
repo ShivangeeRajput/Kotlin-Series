@@ -10,4 +10,5 @@ fun main() {
     val sessionThree=Session("SessionThree",Date())
 }
 
-data class Session(@JvmField val name: String, val date: Date=Date())
+//data class Session(@JvmField val name: String, val date: Date=Date()) for jvmfield
+data class Session @JvmOverloads constructor(val name: String, val date: Date = Date()) //for jvmOverloads
