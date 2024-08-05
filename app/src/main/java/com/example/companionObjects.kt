@@ -23,3 +23,12 @@ class myClass{
         }
     }
 }
+//Class Mentor{
+//    companion object config{
+//        const val maxSlot=10
+//        funguide()
+//    }
+//
+//}
+//Mentor.guide()
+//val maxslot=Mentor.config.maxSlot
