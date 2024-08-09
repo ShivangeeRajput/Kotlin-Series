@@ -11,7 +11,8 @@ package com.example
  //instead of this we will create the singleton object class
 
 fun main() {
-    println(singleton.toString())
-    println(singleton.toString())
+    println(user.toString())
+    println(user.toString())
 }
-object singleton{}
+//user is the singleton class here
+object user{}
