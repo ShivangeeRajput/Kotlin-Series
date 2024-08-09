@@ -3,7 +3,7 @@ package com.example
 fun main() {
 
 }
-fun guidee() {
+fun Guidee() {
     print("guide start")
     teachh({
         print("teach abc")

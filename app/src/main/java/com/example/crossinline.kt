@@ -5,7 +5,7 @@ package com.example
 inline fun teachhh(crossinline abcd:()->Unit){
     abcd()
 }
-fun Guidee(){
+fun Guide(){
     println("Guide start")
     teachhh {
         println("abcd start")
