@@ -1,20 +1,21 @@
 package com.example
 
-//extension function: we can extend a class without inheriting its functionality.
- class Circle2(val radius: Double){
-    fun area(): Double{
+//Extension function: we can extend a class without inheriting its functionality.
+//It is defined outside of the class but can be called as if it were a member of the class
+
+class Circle2(val radius:Double){
+    fun area():Double{
         return Math.PI*radius*radius
     }
 }
-fun main(){
-    // Extension function created for a class Circle
-    fun Circle2.perimeter(): Double{
-        return 2*Math.PI*radius;
+fun main() {
+    //Extension fun created for class Circle
+    fun Circle2.perimeter(): Double {
+        return 2 * Math.PI * radius
     }
-    // create object for class Circle
-    val newCircle = Circle2(2.5);
-    // invoke member function
-    println("Area of the circle is ${newCircle.area()}")
-    // invoke extension function
-    println("Perimeter of the circle is ${newCircle.perimeter()}")
+    //invoked the extension fun
+    val newCircle=Circle2(4.0)
+    println("Area of circle is ${newCircle.area()}")
+    println("Perimeter if circle is ${newCircle.perimeter()}")
+
 }
