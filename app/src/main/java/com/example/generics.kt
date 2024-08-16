@@ -18,7 +18,8 @@ class intContainer(var data:Int){
         return data
     }
 }
-//instead of creating the same for all data types just create a generic class with <t> as type ner again and again we can simple create a generics class
+//instead of creating the same for all data types just create a generic class with <t>
+// as type ner again and again we can simple create a generics class
 //generic class are independent of any type of data
 class Container<T>(var data:T) {
     fun setValue(value: T) {

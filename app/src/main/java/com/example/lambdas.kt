@@ -25,6 +25,7 @@ fun main(){
     val simplifySingleParam: (Int)->Int ={it + it}
     println(simplifySingleParam(2))
     println(singleParam(3))
+    println(calculatorr(60,50,::sum))
 
 }
 
@@ -37,9 +38,15 @@ fun calculator(a:Double,b:Double,gn:(Double,Double)->Double) {
     println(result)
 }
 
+fun calculatorr(e:Int,f:Int,gt:(Int,Int)->Int){
+    val result1=gt(e,f)
+    println(result1)
+}
+
 //Normal function
 fun sum(a:Int,b:Int):Int{
     return a+b
 }
 //lambda function
 val sum= {a:Int,b:Int -> a+b}
+
