@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.kot.R
 import com.example.models.MainViewModel
+import com.example.models.MainViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tvCount=findViewById(R.id.tvCount)
-        mainViewModel=ViewModelProvider(this).get(MainViewModel::class.java)
+        mainViewModel=ViewModelProvider(this,MainViewModelFactory(10)).get(MainViewModel::class.java)
 
         setText()
     }
