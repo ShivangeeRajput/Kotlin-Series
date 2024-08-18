@@ -31,7 +31,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="404dp"
-        android:onClick="increment"
         android:text="+"
         android:textSize="25sp" />
 
