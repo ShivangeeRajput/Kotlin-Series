@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Kot"
         tools:targetApi="31">
         <activity
-            android:name="com.example.RecyclerView"
+            android:name="com.example.activity.RecyclerView"
             android:exported="false" />
         <activity
             android:name="com.example.DataBindingExample"
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.MainActivity"
+            android:name="com.example.activity.MainActivity"
             android:exported="false"></activity>
     </application>
 
