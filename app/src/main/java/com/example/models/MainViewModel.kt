@@ -1,4 +1,5 @@
 package com.example.models
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel(val initialValue:Int):ViewModel() {
@@ -6,4 +7,7 @@ class MainViewModel(val initialValue:Int):ViewModel() {
     fun increment(){
         count++
     }
+
+    
+
 }
