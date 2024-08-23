@@ -12,6 +12,11 @@
         android:theme="@style/Theme.Kot"
         tools:targetApi="31">
         <activity
+            android:name="com.example.ComposeLearning"
+            android:exported="false"
+            android:label="@string/title_activity_compose_learning"
+            android:theme="@style/Theme.Kot" />
+        <activity
             android:name="com.example.activity.RecyclerView"
             android:exported="false" />
         <activity
@@ -25,7 +30,7 @@
         </activity>
         <activity
             android:name="com.example.activity.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
