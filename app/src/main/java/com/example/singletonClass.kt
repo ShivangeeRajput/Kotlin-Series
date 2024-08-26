@@ -10,9 +10,23 @@ package com.example
 //}
  //instead of this we will create the singleton object class
 
-fun main() {
-    println(user.toString())
-    println(user.toString())
+//first example
+//fun main() {
+//    println(user.toString())
+//    println(user.toString())
+//}
+////user is the singleton class here
+//object user{}
+
+//second example
+object mySingleton{
+    var data:String?=null
+    fun doSomething() {
+        println("Singleton is working with data: $data")
+    }
 }
-//user is the singleton class here
-object user{}
+
+fun main() {
+    mySingleton.data="HELLO WORLD:)"
+    mySingleton.doSomething()
+}

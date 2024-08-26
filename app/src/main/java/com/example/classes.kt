@@ -6,8 +6,8 @@ fun main() {
 //   mustang.runCar()
 //    mustang.appliedBrakes()
 //    bmw.type
-      var person= person("A",20)
-      var person2= person("B",18)
+      var person= Personn("A",20)
+      var person2= Personn("B",18)
       println(person.age)
       println(person.name)
       println(person2.age)
@@ -24,7 +24,7 @@ fun main() {
 //    fun appliedBrakes(){
 //        println("Break Applied")
 //    }
-    class person(nameParam:String,ageParam:Int)// creating constructors
+    class Personn(nameParam:String,ageParam:Int)// creating constructors
 {
         val name:String=nameParam
         val age:Int=ageParam
