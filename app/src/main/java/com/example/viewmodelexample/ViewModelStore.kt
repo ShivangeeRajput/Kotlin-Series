@@ -7,7 +7,7 @@ class ViewModelStore {
 
     internal fun put(key: String, viewModel: ViewModel) {
         val oldViewModel = map.put(key, viewModel)
-        oldViewModel?.onCleared()
+//        oldViewModel?.onCleared()
     }
 
     internal fun get(key: String): ViewModel? {
