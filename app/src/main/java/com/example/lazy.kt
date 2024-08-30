@@ -8,4 +8,8 @@ class Sessionnn {
     fun getMentor(): Mentor {
         return mentor
     }
+    val name: String by lazy {
+        println("Hello World")
+        "Hello"
+    }
 }
