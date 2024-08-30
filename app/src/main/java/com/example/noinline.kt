@@ -14,7 +14,7 @@ fun Guidee() {
     print("guide end")
 }
 
-inline fun  teachh(abc:()-> Unit, noinline xyz:()-> Unit) {
+inline fun teachh(abc:() -> Unit, noinline xyz:() -> Unit){
     abc()
     xyz()
 }
