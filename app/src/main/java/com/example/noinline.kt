@@ -18,3 +18,4 @@ inline fun  teachh(abc:()-> Unit, noinline xyz:()-> Unit) {
     abc()
     xyz()
 }
+
