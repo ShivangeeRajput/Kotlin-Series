@@ -8,7 +8,7 @@ fun main() {
     //invoked the extension fun
     val newCircle=Circle2(4.0)
     println("Area of circle is ${newCircle.area()}")
-    println("Perimeter if circle is ${newCircle.perimeter()}")
+    println("Perimeter of circle is ${newCircle.perimeter()}")
 }
 class Circle2(val radius:Double){
     fun area():Double{
