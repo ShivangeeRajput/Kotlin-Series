@@ -1,7 +1,7 @@
 package com.example
 
 fun main() {
-    myClass.myObject.f()
+
     myClass.f()
     myClass.anotherObject.f2()
     //NOTE- if we dont want to use the reference of the myobject then we have to make object as companion object
@@ -9,7 +9,7 @@ fun main() {
 }
 
 class myClass{
-    companion object myObject{
+    companion object {
         @JvmStatic
         fun f(){
             println("Hello World")
