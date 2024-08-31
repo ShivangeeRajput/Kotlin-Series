@@ -11,6 +11,7 @@ fun Guide(){
     }
     println("Guide end")
 }
-inline fun teachhh(crossinline abcd:()->Unit){
+inline fun teachhh(crossinline abcd:()->Unit)  //Unit represents that the function does not return anything
+{
     abcd()
 }
