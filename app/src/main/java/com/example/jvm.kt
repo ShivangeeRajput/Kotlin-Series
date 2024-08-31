@@ -2,6 +2,6 @@ package com.example
 
 
 class jvm {
-    @JvmStatic
+//    @JvmStatic
 
 }
