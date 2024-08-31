@@ -1,12 +1,15 @@
 package com.example
 
-inline fun <reified T> displayValue(value: T) {
-    println(value)
-    println("Type of T: ${T::class.java}")
+inline fun <reified T> printType(value:T)
+{
+    println(T::class.java.simpleName)
 }
 
 fun main() {
-    displayValue<String>("Generics")
-    displayValue<Int>(10)
+    printType<String>("Generics")
+    printType<Int>(10)
 }
+
+
+
 
