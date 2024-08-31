@@ -39,6 +39,10 @@ fun main() {
         designation = "CMO"
     }
     println(emp)
+    val name = "John Wick".also {
+        println("Original name is $it")
+    }
+
 }
 
 data class Employeee(var name: String = "", var designation: String = "Developer")
