@@ -21,6 +21,9 @@ fun guidee(){
     }
     print("guide end")
 }
-inline fun teachh(abc:() -> Unit){
+inline fun teachh(abc:() -> Unit)
+{
     abc()
 }
+////When a function returns Unit,
+// it means that the function does not return any meaningful value.
