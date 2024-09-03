@@ -18,3 +18,5 @@ class Circle2(val radius:Double){
 
 //Extension function: we can extend a class without inheriting its functionality.
 //It is defined outside of the class but can be called as if it were a member of the class
+//Extension functions are useful for adding functionality to classes from libraries
+// or the standard library that we can't modify directly
