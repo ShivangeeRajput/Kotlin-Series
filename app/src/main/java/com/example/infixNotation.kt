@@ -5,7 +5,7 @@ package com.example
 
 infix fun Int.add(value:Int):Int=this + value
 fun main() {
-    val sum= 5 add (10+15)
+    val sum= 5 add 10 //or 5 add(10+15)
     println(sum)
 }
 
