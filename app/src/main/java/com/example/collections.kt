@@ -14,6 +14,10 @@ fun main() {
     println(list2)
     //forEach
     num.forEach{ println(it) }
+    //reduce
+    val numbers = listOf(1, 2, 3, 4, 5)
+    val sum = numbers.reduce { acc, number -> acc + number }
+    println(sum) // Output: 15
 
 }
 fun isOdd(a:Int): Boolean {
