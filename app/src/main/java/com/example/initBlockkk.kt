@@ -7,6 +7,10 @@ class Car(val model: String, var speed: Int, var fuel: Int) {
         require(fuel in 0..100) { "Fuel level must be between 0 and 100" }
         println("Car initialized: Model=$model, Speed=$speed, Fuel=$fuel")
     }
+    init {
+        val modelFuel="$model has $fuel"
+        println(modelFuel)
+    }
 }
 
 fun main() {

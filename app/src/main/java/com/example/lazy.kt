@@ -9,7 +9,14 @@ class Sessionnn {
         return mentor
     }
     val name: String by lazy {
-        println("Hello World")
-        "Hello"
+        "John"
     }
+     val lastName: String by lazy {
+        "Doe"
+    }
+}
+class Session2 {
+
+    private val mentor: Mentor by lazy { Mentor() }
+
 }
