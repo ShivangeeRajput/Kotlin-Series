@@ -42,7 +42,16 @@ fun main() {
     val name = "John Wick".also {
         println("Original name is $it")
     }
+    //WITH-configure the object but return different result
+    val name_desig=with(emp){
+        "$name $designation"
+    }
 
 }
 
 data class Employeee(var name: String = "", var designation: String = "Developer")
+
+
+//when to use apply and with
+//use APPLY when you want to confingure and return the same object means you modify the object and keep the object as it is
+//use WITH when you want to perform task on the objects but return different result,
