@@ -17,6 +17,8 @@ class Sessionnn {
 }
 class Session2 {
 
-    private val mentor: Mentor by lazy { Mentor() }
+    private val mentor: Mentor by lazy {
+        Mentor()
+    }
 
 }
