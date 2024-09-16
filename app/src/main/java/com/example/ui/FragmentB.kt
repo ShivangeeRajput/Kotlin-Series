@@ -20,13 +20,14 @@ class FragmentB : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_b, container, false)
-
-        viewModel=SharedViewModel(requireActivity()).get(SharedViewModel::class.java)
-        viewModel.data.observe(viewLifecycleOwner){
-            data->
-            view?.findViewById<TextView>(R.id.dataTextView)?.text=data
+        val view= inflater.inflate(R.layout.fragment_b, container, false)
+        //getting teh viewmodel
+         viewModel=ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
+         viewModel.sharedData.observe(viewLifecycleOwner) { data ->
+            // Updating the TextView with the new data
+            view.findViewById<TextView>(R.id.dataTextView).text = data
         }
+        return view
     }
 
 

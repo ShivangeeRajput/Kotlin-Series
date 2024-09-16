@@ -7,6 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.kot.R
 import com.example.models.MainViewModel
 import com.example.models.MainViewModelFactory
+import com.example.ui.FragmentA
+import com.example.ui.FragmentB
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +18,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container_a, FragmentA())
+            .replace(R.id.fragment_container_b, FragmentB())
+            .commit()
+
         tvCount=findViewById(R.id.tvCount)
         mainViewModel=ViewModelProvider(this,MainViewModelFactory(10)).get(MainViewModel::class.java)
 

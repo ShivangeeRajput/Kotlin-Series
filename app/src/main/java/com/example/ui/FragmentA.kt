@@ -18,13 +18,14 @@ class FragmentA : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_a, container, false)
-
-        viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
+        val view= inflater.inflate(R.layout.fragment_a, container, false)
+        //getting the viewmodel from activity
+        viewModel=ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
+        //updating  data in viewmodel when button is clicked
         view.findViewById<Button>(R.id.updateButton).setOnClickListener {
-            viewModel.data.value = "Hello from Fragment A"
+            viewModel.sharedData.value="Hello from fragment A"
         }
+        return view
     }
-
 
 }

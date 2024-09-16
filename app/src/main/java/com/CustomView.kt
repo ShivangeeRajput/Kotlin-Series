@@ -2,12 +2,15 @@ package com
 
 import android.content.Context
 import android.graphics.Canvas
+import android.os.Build
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.compose.ui.graphics.Color
 import java.security.KeyStore.Entry.Attribute
 
+@RequiresApi(Build.VERSION_CODES.O)
 class CustomView(context: Context, attrs:Attribute): View(context,attrs) {
-    private val customColor:Int= Color.Red
+//    private val customColor:Int= Color.Red
     private val customTextSize:Float=24f
 
     init {
