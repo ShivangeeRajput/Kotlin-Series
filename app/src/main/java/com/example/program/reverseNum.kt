@@ -1,10 +1,17 @@
 package com.example.program
 
-fun main() {
-
+fun reverseNumber(number: Int): Int {
+    var num = number
+    var reversed = 0
+    while (num != 0) {
+        val digit = num % 10
+        reversed = reversed * 10 + digit
+        num /= 10
+    }
+    return reversed
 }
 
-fun reverseNum(num:Int):Int{
-
-
+fun main() {
+    val num = 1234
+    println("Reversed Number: ${reverseNumber(num)}")
 }
