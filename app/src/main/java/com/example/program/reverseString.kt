@@ -1,8 +1,11 @@
 package com.example.program
 
 fun main() {
-    val name:String="Shivangee"
-    println(name.reversed())
+   print("Enter a string: ")
+   val str= readLine()?:""
+   println(str.reversed())
 }
+
+
 
 
