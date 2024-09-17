@@ -11,7 +11,7 @@ fun isPrime(num:Int):Boolean{
 }
 
 fun main() {
-    val num = 12
+    val num = 32
     if (isPrime(num)) {
         println("$num is a prime number")
     } else {
