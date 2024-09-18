@@ -1,22 +1,22 @@
 package com.example
 
-class Example {
+class lateinitCheck {
     lateinit var name: String
 
-    fun checkInitialization() {
-        if (::name.isInitialized) {
-            println("Lateinit variable is initialized with: $name")
-        } else {
-            println("Lateinit variable is not initialized")
-        }
-    }
+  fun checkInitialization(){
+      if(::name.isInitialized){
+          println("Lateinit is initialized with $name")
+      }
+      else
+        println("Lateinit is not initialized")
+  }
 }
 
 fun main() {
-    val example = Example()
-    example.checkInitialization() // Outputs: Lateinit variable is not initialized
+    val check = lateinitCheck()
+    check.checkInitialization() // Output: Lateinit variable is not initialized
 
-    example.name = "Hello"
-    example.checkInitialization() // Outputs: Lateinit variable is initialized with: Hello
+    check.name = "John Wick"
+    check.checkInitialization() // Output: Lateinit variable is initialized with: Hello
 }
 
