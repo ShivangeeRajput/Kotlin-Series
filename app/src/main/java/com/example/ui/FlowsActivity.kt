@@ -17,6 +17,7 @@ class FlowsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flows)
+        //consuming data
         GlobalScope.launch {
             val data: Flow<Int> =producer()
             data.collect{
@@ -25,6 +26,7 @@ class FlowsActivity : AppCompatActivity() {
         }
 
     }
+    //producing Data
     fun producer()= flow<Int> {
         val list= listOf(1,2,3,4,5,6,7)
         list.forEach {
