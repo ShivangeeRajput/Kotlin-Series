@@ -14,6 +14,9 @@ class Sessionnn {
      val lastName: String by lazy {
         "Doe"
     }
+    val middleName:String by lazy{
+        "Middle"
+    }
 }
 class Session2 {
 

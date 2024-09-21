@@ -15,3 +15,4 @@ fun main() {
     //partition creates 2 list one for true and other for false
 }
 
+

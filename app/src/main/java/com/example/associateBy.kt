@@ -11,3 +11,5 @@ fun main() {
     val map=contacts.associateBy({it.name},{it.number})
     println(map)
 }
+
+// associateBy let us convert a list into a map.
