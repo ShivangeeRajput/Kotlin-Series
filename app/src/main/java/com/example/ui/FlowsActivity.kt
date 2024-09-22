@@ -18,14 +18,15 @@ class FlowsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flows)
         //consuming data
-        GlobalScope.launch {
-            val data: Flow<Int> =producer()
-            data.collect{
-                Log.d("Flows",it.toString())
-            }
-        }
+       GlobalScope.launch {
+           val data=producer()
+           data.collect{
+               Log.d("Collecting data",it.toString())
+           }
+       }
 
     }
+    //suspend block as by default flows create coroutines
     //producing Data
     fun producer()= flow<Int> {
         val list= listOf(1,2,3,4,5,6,7)

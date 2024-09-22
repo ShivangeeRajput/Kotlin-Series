@@ -1,15 +1,18 @@
 package com.example.program
 
-fun main() {
-    print("Enter a String: ")
-    val str= readLine()?:""
-    if (isPalindrome(str))
-        println("$str is a palindrome")
-    else
-        println("$str is not a palindrome")
-
-}
 fun isPalindrome(input:String):Boolean{
-    val reverseInput=input.reversed()
-    return input==reverseInput
+    val reversedInput=input.reversed()
+   return input==reversedInput
 }
+
+fun main() {
+    print("Enter a string:")
+    var str= readLine()?:""
+    if (isPalindrome(str)){
+        println("$str is palindrome")
+    }
+    else
+        println("$str is not palindrome")
+}
+
+
