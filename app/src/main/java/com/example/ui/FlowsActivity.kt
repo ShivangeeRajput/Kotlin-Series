@@ -19,7 +19,7 @@ class FlowsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_flows)
         //consuming data
        GlobalScope.launch {
-           val data=producer()
+           val data: Flow<Int> =producer()
            data.collect{
                Log.d("Collecting data",it.toString())
            }
