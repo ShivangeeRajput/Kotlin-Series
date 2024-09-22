@@ -18,12 +18,17 @@ class FlowsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flows)
         //consuming data
-       GlobalScope.launch {
+    val job=GlobalScope.launch {
            val data: Flow<Int> =producer()
            data.collect{
                Log.d("Collecting data",it.toString())
            }
        }
+        //cancelling the flow after 3500ms
+        GlobalScope.launch {
+            delay(3500)
+            job.cancel()
+        }
 
     }
     //suspend block as by default flows create coroutines
