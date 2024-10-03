@@ -14,7 +14,7 @@ interface RetrofitApiCalls {
     suspend fun apiCall2(): Int // 3 secs
 }
 
-
+// Retrofit client generation
 val retrofit = Retrofit.Builder()
     .baseUrl("https://changejar.in/")
     .addConverterFactory(GsonConverterFactory.create())
@@ -22,18 +22,19 @@ val retrofit = Retrofit.Builder()
 
 val apiService = retrofit.create(RetrofitApiCalls::class.java)
 
+// Coroutine scope to make calls concurrently
 suspend fun fetchApiResults(): Pair<String, Int> {
     return coroutineScope {
         val apiCall1Result = async { apiService.apiCall1() }
         val apiCall2Result = async { apiService.apiCall2() }
 
-
+        // Await both results and pair them
         Pair(apiCall1Result.await(), apiCall2Result.await())
     }
 }
 
 fun main() = runBlocking {
-
+    // Fetch results and print the final pair
     val finalResult = fetchApiResults()
     println("Final Result: $finalResult")
 }
