@@ -17,3 +17,5 @@ fun main() {
     val result=reverseNum().isReverse(1234)
     println(result)
 }
+
+
