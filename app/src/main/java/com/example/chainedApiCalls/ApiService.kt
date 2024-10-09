@@ -8,7 +8,7 @@ interface ApiService {
     @GET("user/profile")
     suspend fun getUserProfile():UserProfile
 
-    //chaining
+    //Fetching user's profile first and then using it to fetch their posts through user ID
     @GET("user/post")
     suspend fun getUserPost(@Path("userId") userId:String) : List<Post>
 
