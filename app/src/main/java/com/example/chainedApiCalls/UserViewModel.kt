@@ -16,7 +16,7 @@ class UserViewModel(private val apiService: ApiService):ViewModel() {
 
     fun fetchUserProfileAndPosts() {
         viewModelScope.launch {
-            try {
+
                 // First API Call: Fetching User Profile
                 val profile = apiService.getUserProfile()
                 _userProfile.value = profile
@@ -25,10 +25,7 @@ class UserViewModel(private val apiService: ApiService):ViewModel() {
                 val posts = apiService.getUserPost(profile.id)
 //                _userPost.value = Post
 
-            } catch (e: Exception) {
 
-//                _error.value = "Error fetching data: ${e.message}"
-            }
         }
     }
 
