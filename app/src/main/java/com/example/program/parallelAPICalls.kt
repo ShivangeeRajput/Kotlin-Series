@@ -1,6 +1,7 @@
 package com.example.program
 
 import com.example.apiService
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
@@ -18,8 +19,3 @@ suspend fun fetchApiResults(): Pair<String,Int> {
 
 
 
-//suspend fun fetchApiResults():Pair<String,String>{
-//    return coroutineScope {
-//
-//    }
-//}
