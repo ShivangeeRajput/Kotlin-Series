@@ -1,16 +1,25 @@
 package com.example.program
 
 import com.example.apiService
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
 
-class parallelAPICalls {
 
+// Coroutine scope to make calls concurrently
+suspend fun fetchApiResults(): Pair<String,Int> {
+    return coroutineScope {
+        val apiCall1Result = async { apiService.apiCall1() }
+        val apiCall2Result = async { apiService.apiCall2() }
 
+        // Await both results and pair them
+        Pair(apiCall1Result.await(), apiCall2Result.await())
+    }
 }
 
 
-//fun main() {
-//    val result1 = async { apiService.getUserDetails() }
-//    val result2 = async { apiService.getUserPosts() }
-//    val userDetails = result1.await()
-//    val userPosts = result2.await()
+
+//suspend fun fetchApiResults():Pair<String,String>{
+//    return coroutineScope {
+//
+//    }
 //}

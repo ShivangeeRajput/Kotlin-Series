@@ -10,7 +10,7 @@ class NetworkModule {
     fun providesRetrofit():Retrofit{
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("")
+            .baseUrl("BASE_URL")
             .build()
 
     }
