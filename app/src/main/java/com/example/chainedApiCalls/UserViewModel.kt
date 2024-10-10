@@ -23,11 +23,11 @@ class UserViewModel(private val apiService: ApiService):ViewModel() {
 
                 // Second API Call: Fetching User Posts based on User ID from Profile
                 val posts = apiService.getUserPost(profile.id)
-                _userPost.value = Post
+//                _userPost.value = Post
 
             } catch (e: Exception) {
 
-                _error.value = "Error fetching data: ${e.message}"
+//                _error.value = "Error fetching data: ${e.message}"
             }
         }
     }
