@@ -12,18 +12,20 @@
         android:theme="@style/Theme.Kot"
         tools:targetApi="31">
         <activity
+            android:name="com.example.ui.RecyclerVieww"
+            android:exported="false" />
+        <activity
             android:name="com.example.ui.MultipleConsumersFlow"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.example.ui.FlowsActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name="com.example.ui.ChannelsActivity"
             android:exported="false" />
@@ -32,13 +34,10 @@
             android:exported="false" />
         <activity
             android:name="com.example.DataBindingExample"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name="com.example.activity.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
