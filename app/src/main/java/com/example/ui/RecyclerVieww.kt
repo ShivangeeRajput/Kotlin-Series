@@ -10,7 +10,7 @@ import com.example.kot.R
 class RecyclerVieww : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+//        enableEdgeToEdge()
         setContentView(R.layout.activity_recycler_vieww)
 
     }
