@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Kot"
         tools:targetApi="31">
         <activity
-            android:name="com.example.ui.RecyclerVieww"
+            android:name="com.example.recyclerView.RecyclerVieww"
             android:exported="false" />
         <activity
             android:name="com.example.ui.MultipleConsumersFlow"

@@ -1,4 +1,4 @@
-package com.example.ui
+package com.example.recyclerView
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
