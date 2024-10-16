@@ -19,7 +19,7 @@ class FragmentA : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view= inflater.inflate(R.layout.fragment_a, container, false)
-        //getting the viewmodel from activity
+        //getting the viewmodel from activity (ViewModel Example)
         viewModel=ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
         //updating  data in viewmodel when button is clicked
         view.findViewById<Button>(R.id.updateButton).setOnClickListener {
