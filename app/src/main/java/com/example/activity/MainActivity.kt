@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.kot.R
 import com.example.models.MainViewModel
 import com.example.models.MainViewModelFactory
-import com.example.ui.FragmentA
-import com.example.ui.FragmentB
+import com.example.fragmentCommunication.FragmentA
+import com.example.fragmentCommunication.FragmentB
 
 class MainActivity : AppCompatActivity() {
 

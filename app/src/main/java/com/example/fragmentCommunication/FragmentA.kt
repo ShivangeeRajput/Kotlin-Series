@@ -1,4 +1,4 @@
-package com.example.ui
+package com.example.fragmentCommunication
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import com.example.kot.R
-import com.example.models.SharedViewModel
 
 class FragmentA : Fragment() {
    private lateinit var viewModel: SharedViewModel

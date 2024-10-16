@@ -1,4 +1,4 @@
-package com.example.models
+package com.example.fragmentCommunication
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

@@ -1,17 +1,13 @@
-package com.example.ui
+package com.example.fragmentCommunication
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.kot.R
-import com.example.models.SharedViewModel
 
 class FragmentB : Fragment() {
     private lateinit var viewModel: SharedViewModel
