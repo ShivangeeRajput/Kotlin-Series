@@ -22,11 +22,14 @@ class rvAdapter(private val dataList: ArrayList<rvDataClass>) : RecyclerView.Ada
 
     override fun onBindViewHolder(holder: ViewHolderClass, position: Int) {
         val currentItem = dataList[position]
-        holder.rvImage.setImageResource(currentItem.image)
-        holder.rvTitle.text = currentItem.title
+//        holder.rvImage.setImageResource(currentItem.image)
+//        holder.rvTitle.text = currentItem.title
     }
 
     override fun getItemCount(): Int {
         return dataList.size
     }
 }
+
+
+
