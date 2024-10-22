@@ -1,9 +1,14 @@
 package com.example
 
 fun main() {
-    val string="John Wick"
-    println(string.reversed())
-    for (char in string){
-        println(char)
+    println("Enter a string:")
+    val string= readLine()
+    println(string?.reversed())
+
+    if (string != null) {
+        for (char in string){
+            println(char)
+        }
+
     }
 }
