@@ -1,7 +1,7 @@
 package com.example
 
 //crossinline is used to avoid non local return
-//we cant put any return inside that lambda
+//we can't put any return inside that lambda
 
 fun Guide(){
     println("Guide start")
