@@ -6,6 +6,7 @@ class Mentor {
 
 class Session {
     private lateinit var mentor: Mentor
+    private lateinit var designation: String
     lateinit var name:String
 
     fun initializeMentor() {
@@ -13,5 +14,6 @@ class Session {
     }
     fun setUp(){
         name="John Wick"
+        designation="Baba Yaga"
     }
 }
