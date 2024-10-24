@@ -10,7 +10,8 @@ fun main() {
     }
     println(emp)
 
-    // LET: Perform actions on a nullable object
+    // LET:Use when you have to perform multiple operation on a object, exclude nulllable obj
+    // Perform actions on a nullable object
     val emp2: Employee? = null
     emp2?.let {
         println(it.name)
