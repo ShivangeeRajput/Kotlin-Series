@@ -19,8 +19,6 @@ fun getDistance(word: String): Int {
 
 fun main(args: Array<String>) {
     val word = readLine()!!
-
     val result = getDistance(word)
-
     println(result)
 }

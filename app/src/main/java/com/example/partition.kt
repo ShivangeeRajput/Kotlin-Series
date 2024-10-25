@@ -12,7 +12,7 @@ fun main() {
     val (mentors,notMentors)=users.partition { it.isMentor }
     println(mentors)
     println(notMentors)
-    //partition creates 2 list one for true and other for false
+    //Partition: Used for filtering the list-> it creates 2 list one for true and other for false
 }
 
 
