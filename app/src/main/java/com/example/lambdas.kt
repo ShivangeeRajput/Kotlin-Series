@@ -14,7 +14,7 @@ fun main(){
         val a=2+3
         "Hello World"
         val b=2.4
-
+    println(res2)
     }
     multilineLambda()
     val singleParamLambda={x:Int -> x * x}
@@ -58,3 +58,8 @@ val add: (Int, Int) -> Int = { a, b -> a + b }
 
 // Using the higher-order function with the lambda
 val result = performOperation(5, 3, add)
+
+val numbers= listOf(1,2,3,4,5,6)
+val res2= numbers.map { it*2 }
+val res= numbers.filter { it % 2 == 0 }
+

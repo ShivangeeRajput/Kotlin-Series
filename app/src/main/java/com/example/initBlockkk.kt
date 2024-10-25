@@ -21,3 +21,9 @@ fun main() {
     // val invalidCar = Car("Honda", -10, 110)
     // Output: Exception in thread "main" java.lang.IllegalArgumentException: Speed must be non-negative
 }
+class Mentor2(val fname:String,val lname:String){
+    init {
+        val fullName="$fname $lname"
+        println(fullName)
+    }
+}
