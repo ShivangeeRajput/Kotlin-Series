@@ -1,7 +1,6 @@
 package com.example.program
 
-import com.example.apiService
-import kotlinx.coroutines.CoroutineScope
+import com.example.coroutineExample.apiService
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 

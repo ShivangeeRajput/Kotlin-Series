@@ -1,6 +1,6 @@
-package com.example.chainedApiCalls
+package com.example.coroutineExample.chainedApiCalls
 
-import com.example.retrofit
+import com.example.coroutineExample.retrofit
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

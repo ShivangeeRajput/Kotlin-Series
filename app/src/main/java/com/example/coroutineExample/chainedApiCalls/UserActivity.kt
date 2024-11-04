@@ -1,4 +1,4 @@
-package com.example.chainedApiCalls
+package com.example.coroutineExample.chainedApiCalls
 
 import android.os.Bundle
 import android.widget.Toast

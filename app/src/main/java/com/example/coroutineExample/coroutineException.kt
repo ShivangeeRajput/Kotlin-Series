@@ -1,4 +1,4 @@
-package com.example
+package com.example.coroutineExample
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers

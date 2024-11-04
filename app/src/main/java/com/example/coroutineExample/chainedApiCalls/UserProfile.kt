@@ -1,4 +1,4 @@
-package com.example.chainedApiCalls
+package com.example.coroutineExample.chainedApiCalls
 
 data class UserProfile(
     val id: String,

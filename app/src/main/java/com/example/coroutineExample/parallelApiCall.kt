@@ -1,4 +1,4 @@
-package com.example
+package com.example.coroutineExample
 
 import kotlinx.coroutines.*
 import retrofit2.Retrofit

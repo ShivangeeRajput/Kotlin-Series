@@ -1,4 +1,4 @@
-package com.example.chainedApiCalls
+package com.example.coroutineExample.chainedApiCalls
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
