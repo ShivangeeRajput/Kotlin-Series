@@ -9,6 +9,7 @@ class ApiImpl : ApiInterface {
      suspend fun api3() = listOf("Alice", "Akash", "Aman")
      suspend fun api4() = listOf("Devansh", "Diksha", "Dhruv")
      suspend fun api5() = listOf("Sunny", "Salman", "Saurav")
+     suspend fun api6()  = listOf("Sandy","Shreya0","Shubham")
 }
 
 fun main() = runBlocking {
@@ -21,11 +22,11 @@ fun main() = runBlocking {
     // Launching coroutines to fetch the API responses concurrently
     val apiCalls = coroutineScope {
         listOf(
-            async { apiService.api3() to 3 },
-            async { apiService.api1() to 1 },
-            async { apiService.api5() to 5 },
-            async { apiService.api2() to 2 },
-            async { apiService.api4() to 4 }
+            async{apiService.api3() to 3},
+            async{apiService.api1() to 1},
+            async{apiService.api5() to 5},
+            async{apiService.api2() to 2},
+            async {apiService.api4() to 4}
         )
     }
 
