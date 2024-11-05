@@ -12,13 +12,13 @@ class ApiImpl : ApiInterface {
 }
 
 fun main() = runBlocking {
-    // Initialize the ApiInterface instance
+    // Initializing the ApiInterface instance
     val apiService = ApiImpl()
 
-    // Mutable list to keep track of UI data in order
+    // Mutable list for keep track of UI data in order
     val uiList = mutableListOf<String>()
 
-    // Launch coroutines to fetch the API responses concurrently
+    // Launching coroutines to fetch the API responses concurrently
     val apiCalls = coroutineScope {
         listOf(
             async { apiService.api3() to 3 },
@@ -29,7 +29,7 @@ fun main() = runBlocking {
         )
     }
 
-    // Process each API response as they complete
+    // Processing each API response as they complete
     apiCalls.forEach { deferred ->
         val (response, order) = deferred.await()
         when (order) {
@@ -40,7 +40,7 @@ fun main() = runBlocking {
             5 -> uiList.addAll(6, response)  // After six items (api1 + api3)
         }
 
-        // Print the UI list after each API response for demonstration
+        // Printing the UI list after each API response for demonstration
         println("| UI List |")
         uiList.forEach { println("| $it |") }
         println()
