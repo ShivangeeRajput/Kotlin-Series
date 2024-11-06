@@ -5,8 +5,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
-// Retrofit API Interface
-interface RetrofitApiCalls {
+  // Retrofit API Interface
+  interface RetrofitApiCalls {
     @GET("apiEndpoint1")
     suspend fun apiCall1(): String // 5 secs
 
@@ -14,16 +14,16 @@ interface RetrofitApiCalls {
     suspend fun apiCall2(): Int // 3 secs
 }
 
-// Retrofit client generation
-val retrofit = Retrofit.Builder()
+   // Retrofit client generation
+  val retrofit = Retrofit.Builder()
     .baseUrl("https://changejar.in/")
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 
-val apiService = retrofit.create(RetrofitApiCalls::class.java)
+  val apiService = retrofit.create(RetrofitApiCalls::class.java)
 
-// Coroutine scope to make calls concurrently
-suspend fun fetchApiResults(): Pair<String, Int> {
+  // Coroutine scope to make api calls concurrently
+  suspend fun fetchApiResults(): Pair<String, Int> {
     return coroutineScope {
         val apiCall1Result = async { apiService.apiCall1() }
         val apiCall2Result = async { apiService.apiCall2() }
@@ -38,3 +38,9 @@ fun main() = runBlocking {
     val finalResult = fetchApiResults()
     println("Final Result: $finalResult")
 }
+//suspend fun fetchApiResults{
+// return coroutineScope{
+// val apiresult1={apiService.apiCall1()}
+// }
+//
+// }
