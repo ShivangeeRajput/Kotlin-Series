@@ -4,13 +4,12 @@ import kotlinx.coroutines.*
 import java.net.InterfaceAddress
 import kotlin.coroutines.CoroutineContext
 
-interface ApiInterface {
-     suspend fun api1() = listOf("Ritesh", "Rajat", "Rohan")
-     suspend fun api2() = listOf("Himanshu", "Harman", "Harpreet")
-     suspend fun api3() = listOf("Alice", "Akash", "Aman")
-     suspend fun api4() = listOf("Devansh", "Diksha", "Dhruv")
-     suspend fun api5() = listOf("Sunny", "Salman", "Saurav")
-     suspend fun api6()  = listOf("Sandy","Shreya0","Shubham")
+interface ApiInterface{
+    suspend fun api1()= listOf("Ryan","Jack","Sam")
+    suspend fun api2()= listOf("Rhea","Ria","Rian")
+    suspend fun api3()= listOf("Liam","Chris","Harry")
+    suspend fun api4()= listOf("Vance","Samuel","Alex")
+    suspend fun api5()= listOf("Alex","Alexander","Alexa")
 }
 class ApiImpl : ApiInterface
 
