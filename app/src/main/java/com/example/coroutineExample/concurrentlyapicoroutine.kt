@@ -1,9 +1,10 @@
 package com.example.coroutineExample
 
 import kotlinx.coroutines.*
+import java.net.InterfaceAddress
 import kotlin.coroutines.CoroutineContext
 
-class ApiImpl : ApiInterface {
+interface ApiInterface {
      suspend fun api1() = listOf("Ritesh", "Rajat", "Rohan")
      suspend fun api2() = listOf("Himanshu", "Harman", "Harpreet")
      suspend fun api3() = listOf("Alice", "Akash", "Aman")
@@ -11,6 +12,7 @@ class ApiImpl : ApiInterface {
      suspend fun api5() = listOf("Sunny", "Salman", "Saurav")
      suspend fun api6()  = listOf("Sandy","Shreya0","Shubham")
 }
+class ApiImpl : ApiInterface
 
 fun main() = runBlocking {
     // Initializing the ApiInterface instance
