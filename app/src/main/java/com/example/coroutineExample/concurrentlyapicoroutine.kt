@@ -35,11 +35,11 @@ fun main() = runBlocking {
     apiCalls.forEach { deferred ->
         val (response, order) = deferred.await()
         when (order) {
-            1 -> uiList.addAll(0, response) // Insert at the beginning
-            2 -> uiList.addAll(3, response) // After the first three names (api1)
-            3 -> uiList.addAll(response)     // First response, just add it
-            4 -> uiList.addAll(9, response)  // After nine items (api1 + api2 + api3)
-            5 -> uiList.addAll(6, response)  // After six items (api1 + api3)
+            1 -> uiList.addAll(0, response)
+            2 -> uiList.addAll(3, response)
+            3 -> uiList.addAll(response)
+            4 -> uiList.addAll(9, response)
+            5 -> uiList.addAll(6, response)
         }
 
         // Printing the UI list after each API response for demonstration
