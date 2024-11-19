@@ -9,5 +9,13 @@ fun main(){
         Mentor(3, "John"))
     val distinct = mentors.distinct()
     println(distinct)
+    data class Person4(val fname:String,val lname:String)
+    val per= arrayOf(
+        Person4("John","Wick"),
+        Person4("John","Cena"),
+        Person4("John","Wick"),
+    )
+    println(per.toSet())
 
 }
+
