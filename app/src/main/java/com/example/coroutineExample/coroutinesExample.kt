@@ -13,6 +13,7 @@ import kotlin.coroutines.suspendCoroutine
 
 suspend fun main() {
 
+    GlobalScope.launch(Dispatchers.Main){ println("Running on main thread:${Thread.currentThread().name}") }
     GlobalScope.launch(Dispatchers.Main){
     println("Running on main thread :${Thread.currentThread().name}")
 }

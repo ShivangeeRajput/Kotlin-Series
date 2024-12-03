@@ -48,6 +48,14 @@ fun main() {
         "$name $designation"
     }
 
+    val namee="John Cena" .also {
+        println("Original name is $it")
+    }
+    val nameDes= with(emp){
+       "$name $designation"
+    }
+
+
 }
 
 data class Employeee(var name: String = "", var designation: String = "Developer")

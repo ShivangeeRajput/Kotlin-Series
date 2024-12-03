@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.fragmentCommunication.FragmentCommunication">
 
-
+<Button
+    android:id="@+id/updateButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Update"/>
 
 </FrameLayout>

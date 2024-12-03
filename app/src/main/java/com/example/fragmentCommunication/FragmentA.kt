@@ -28,3 +28,4 @@ class FragmentA : Fragment() {
 }
 
 //  -Two fragments can't communicate directly so we use sharedviewmodels between them
+

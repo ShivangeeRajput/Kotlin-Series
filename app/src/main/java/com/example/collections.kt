@@ -23,3 +23,4 @@ fun main() {
 fun isOdd(a:Int): Boolean {
     return a % 2 != 0
 }
+// Collections are data structures used to store and manage groups of objects-map,set,list
